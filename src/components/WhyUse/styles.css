@@ -1,0 +1,12 @@
+#callToAction {
+    margin: auto;
+    border: 1px solid #cfd8dc;
+    -webkit-box-shadow: 0 7px 50px 0 rgba(84,110,122,0.1);
+    -moz-box-shadow: 0 7px 50px 0 rgba(84,110,122,0.1);
+    box-shadow: 0 7px 50px 0 rgba(38,50,56,0.1);
+    background: #fff;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 40px 50px;
+    position: relative;
+}

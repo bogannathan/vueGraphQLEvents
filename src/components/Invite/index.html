@@ -1,0 +1,7 @@
+<div style="font-family: cursive">
+    <h2 v-if="name">Invitation to {{name}}</h2>
+    <h2 v-else>Invitation</h2>
+    <br />
+    <h5 v-if="invitees.length">{{invitees[0]}}, you are cordially invited</h5>
+    <h5 v-else>______, you are cordially invited</h5>
+</div>

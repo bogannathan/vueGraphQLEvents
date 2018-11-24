@@ -1,0 +1,24 @@
+<div id="form">
+    <div id="formHeader">
+        <h1>Add your event here!</h1>
+        <h5>You can also add people to send invites automatically</h5>
+    </div>
+    <form>
+        <section>
+            <h4>Name of your event:</h4>
+            <input v-model="syncName" placeholder=" gimme a name ">
+        </section>
+        <section>
+            <h4>Where will your event be?</h4>
+            <input v-model="syncWhere" placeholder="great big bounce house">
+        </section>
+        <section>
+            <h4>When will your event be?</h4>
+            <input v-model="syncWhen" placeholder="i'll be on time">
+        </section>
+        <section>
+            <h4>Who do you want to come?</h4>
+            <input v-model="syncWho" placeholder="<insert friends here>">
+        </section>
+    </form>
+</div>
