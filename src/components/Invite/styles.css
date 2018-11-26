@@ -1,0 +1,17 @@
+#details {
+    word-break: break-all;
+}
+
+#inviteHeader {
+    border-bottom: 2px solid #fafafa; 
+    padding-bottom: 10px;
+}
+
+#invite {
+    font-family: cursive; 
+    margin-top: 25px; 
+    background-color: #F8F8F8; 
+    min-height: 500px; display: flex; 
+    flex-direction: column; 
+    justify-content: space-between
+}

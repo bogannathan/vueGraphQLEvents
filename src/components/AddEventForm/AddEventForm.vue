@@ -4,6 +4,26 @@
 export default {
     name: 'AddEventForm',
     props: ['name', 'where', 'when', 'invitees'],
+    data() {
+        return {
+            formInvitees: [],
+            addingInvitee: ''
+        }
+    },
+    methods: {
+        addInvitee() {
+            if (this.addingInvitee.length) {
+
+                this.formInvitees.push(this.addingInvitee)
+                this.addingInvitee = ''
+                this.$emit('update:invitees', this.formInvitees)
+            }
+        },
+        removeInvitee(index) {
+            this.formInvitees.splice(index, 1)
+            this.$emit('update:invitees', this.formInvitees)
+        }
+    },
     computed: {
         syncName: {
             get() { return this.name },
@@ -16,11 +36,6 @@ export default {
         syncWhen: {
             get() { return this.when },
             set(val) { this.$emit('update:when', val) }
-        },
-        syncWho: {
-            get() { return this.invitees },
-            set(val) { this.$emit('update:invitees', val) }
-            //figure out cool way
         }
     }
 }

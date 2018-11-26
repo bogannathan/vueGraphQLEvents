@@ -1,3 +1,15 @@
+#addInviteeButton {
+    margin-top: 10px;
+    background: #43b782;
+    border-radius: 2px;
+    color: #fff;
+    display: inline-block;
+    font-size: 14px;
+    padding: 8px 20px;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
 #form {
     max-width: 500px;
     margin: 0 auto;
@@ -10,7 +22,7 @@
     padding: 0 0 12.5px 0;
 }
 #formHeader {
-    background: #4B99AD;
+    background: #43b782;
     border-radius: 10px 10px 0 0;
     color: white;
     padding: 15px;
@@ -18,7 +30,12 @@
 
 h4 {
     margin-top: 0;
-    color: #4B99AD
+    color: #43b782
+}
+
+.removeInviteeButton {
+    font-weight: lighter;
+    cursor: pointer
 }
 
 section {

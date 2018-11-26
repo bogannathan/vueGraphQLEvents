@@ -18,7 +18,12 @@
         </section>
         <section>
             <h4>Who do you want to come?</h4>
-            <input v-model="syncWho" placeholder="<insert friends here>">
+            <input v-model="addingInvitee" placeholder="<insert friends here>" @keyup.enter="addInvitee()">
+            <span style="margin-top: 10px;"><a id="addInviteeButton" @click="addInvitee()">add invitee</a></span>
+            <div style="display: flex; justify-content: space-between" v-for="(invitee, index) of formInvitees">
+                <p>{{invitee}}</p>
+                <span><a class="removeInviteeButton" @click="removeInvitee(index)">remove</a></span>
+            </div>
         </section>
     </form>
 </div>

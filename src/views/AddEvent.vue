@@ -20,6 +20,12 @@ export default {
         AddEventForm,
         Invite
     },
+    methods: {
+        printit() {
+            /* eslint-disable */
+            console.log('this', this.name, this.where, this.when, this.invitees)
+        }
+    },
     data() {
         return {
             name: '',

@@ -1,7 +1,15 @@
-<div style="font-family: cursive">
-    <h2 v-if="name">Invitation to {{name}}</h2>
-    <h2 v-else>Invitation</h2>
-    <br />
-    <h5 v-if="invitees.length">{{invitees[0]}}, you are cordially invited</h5>
-    <h5 v-else>______, you are cordially invited</h5>
+<div>
+    <h1 id="inviteHeader">What your guests will see</h1>
+    <div id="invite">
+        <div id="details">
+            <h1>YOU ARE INVITED</h1>
+            <br />
+            <h5 v-if="invitees.length">{{invitees[0]}}, you are cordially invited to</h5>
+            <h5 v-else>Guest, you are cordially invited to</h5>
+            <h2 v-if="name" style="text-transform: uppercase">{{name}}</h2>
+            <h5 v-if="where">at {{where}}</h5>
+            <h5 v-if="when">{{when}}</h5>
+        </div>
+        <h5 style="margin-top: 200px" v-if="invitees.length > 1">Other invitees include {{otherInvitees}}</h5>
+    </div>
 </div>
